@@ -1,0 +1,9 @@
+Avaneesh Kolluri
+I pledge my honor that I have abided by the Stevens Honor System.
+
+./mtsieve -s100 -e200000000 -t1 : 0m2.930s
+./mtsieve -s100 -e200000000 -t2 : 0m2.837s
+./mtsieve -s100 -e200000000 -t3 : 0m2.361s
+./mtsieve -s100 -e200000000 -t4 : 0m2.226s
+
+My CPU is "Intel(R) Core(TM) i7-4578U CPU @ 3.00GHz" running on a MacBook Pro. The time does not scale linearly with the number of threads. As the threads increase, the time also increases, however the rate of which it increases slow down. Because I can't test it with more than 4 threads, I would expect that if I were to keep increasing the number of threads, the time would start to plateau.
